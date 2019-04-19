@@ -8,12 +8,12 @@ existing editor plugins.
 
 1. Clone this repo.
 2. Install by `"cargo install --path . [--force]"`
-3. Edit your plugin setting; modify idris-compiler-path
+3. Modify idris-compiler-path in your editor setting
 to `idris-elba-interface`.
 
 ## Manifest Watch
 
-When `--ide-mode` or `--ide-mode-socket` flags is passed
+When a `--ide-mode` or `--ide-mode-socket` flag is passed
 in, the wrapper will watch file changes of `elba.toml` and
 `elba.lock`. Once a change fired, the wrapper will reload 
 elba process in background automatically.
