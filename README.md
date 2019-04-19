@@ -1,8 +1,8 @@
 # idris-elba-interface (TBD)
 
 A wrapper for elba that exposes cli api consistent with
-idris compiler. This wrapper is used for easily integrating
-elba into existing editor plugins.
+idris compiler. It's used to easily integrate elba into
+existing editor plugins.
 
 ## Usage
 
@@ -14,7 +14,7 @@ to `idris-elba-interface`.
 ## Manifest Watch
 
 When `--ide-mode` or `--ide-mode-socket` flags is passed
-in, the wrapper will watch file change of `elba.toml` and
+in, the wrapper will watch file changes of `elba.toml` and
 `elba.lock`. Once a change fired, the wrapper will reload 
 elba process in background automatically.
 
@@ -28,7 +28,7 @@ wrapper:
 - `--ide-mode`
 - `--ide-mode-socket`
 
-The plugin of vscode has some strange behavior after the
+The plugin of vscode has some strange behaviors after the
 reload caused by manifest change. Seems that it's because
 the plugin tries to cache previous evaluations. More tests
 on other editors is necessary.
@@ -37,7 +37,7 @@ on other editors is necessary.
 
 - [ ] kill elba child process on wrapper exit by ctrl-c.
 - [ ] implement a mechanism that ensures a user have
-elba of proper api version.  
+elba with proper api version.  
 - [ ] decide wrapper's name.
 - [ ] implement `--check` if we find any plugin relying 
 on it.
