@@ -30,7 +30,7 @@ wrapper:
 
 The plugin of vscode has some strange behaviors after the
 reload caused by manifest change. Seems that it's because
-the plugin tries to cache previous evaluations. More tests
+the plugin tries to cache previous evaluations. Further tests
 on other editors is necessary.
 
 ## Todos
